@@ -5,6 +5,7 @@ const { Title } = Typography;
 import { useWindowWidthAndHeight } from "hooks";
 
 import { Infos, SignMessage, Status, TransferEth } from "./components";
+import CustomBtn from "layout/CustomHeader/CustomBtn";
 
 const styles = {
   container: {
@@ -15,20 +16,32 @@ const styles = {
     margin: "auto",
     padding: "20px 0",
     borderRadius: "10px",
-    boxShadow: "0px 0px 30px 30px rgba(30, 136, 229, 0.2)"
+    boxShadow: "0px 0px 30px 30px rgba(30, 136, 229, 0.2)",
+    // border : "solid 1px green"
   },
   content: {
     width: "85%",
     margin: "auto",
-    fontSize: "17px"
+    fontSize: "17px",
+    // border : "solid 1px green"
   },
   action: {
     display: "inline-flex",
     flexWrap: "wrap",
     justifyContent: "center",
     gap: "20px"
-  }
+  },
+  // align : {
+  //   width: "100%",
+  //   height: "100vh",
+  //   display: "flex",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   border: "1px solid red"
+  // }
 } as const;
+
+
 
 type DisplayPaneProps = {
   isDarkMode: boolean;
@@ -46,10 +59,14 @@ const DisplayPane: React.FC<DisplayPaneProps> = ({ isDarkMode }) => {
         width: isMobile ? "90%" : "80%"
       }}
     >
-      <Title>Display Info</Title>
+      <Title>Clubz Coin</Title>
       <div style={styles.content}>
         <Status isActivating={isActivating} isActive={isActive} />
         <Infos chainId={chainId} />
+        <div >
+          <CustomBtn/>
+        </div>
+        
 
         {isActive && (
           <>

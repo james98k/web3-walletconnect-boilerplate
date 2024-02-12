@@ -57,7 +57,7 @@ const CustomHeader: FC<CustomHeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
           onClick={toggleColorMode}
           style={{ height: "42px", padding: "5px 7px 0 10px", border: "none" }}
         >
-          <img src={isDarkMode ? light_mode : dark_mode} alt="color mode" width="25px" />
+          {/* <img src={isDarkMode ? light_mode : dark_mode} alt="color mode" width="25px" /> */}
         </Button>
       </div>
     </Header>

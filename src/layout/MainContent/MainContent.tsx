@@ -11,9 +11,10 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "flex-start",
-    marginTop: "100px",
+    // marginTop: "100px",
     padding: "50px",
-    overflow: "auto"
+    overflow: "auto",
+    // border : "solid 1px red"
   },
   contentMobile: {
     display: "flex",
