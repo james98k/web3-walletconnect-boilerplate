@@ -2,10 +2,10 @@ import { useWeb3React } from "@web3-react/core";
 import { Divider, Typography } from "antd";
 const { Title } = Typography;
 
-import { useWindowWidthAndHeight } from "hooks";
+import { useWindowWidthAndHeight } from "../../hooks";
 
-import { Infos, SignMessage, Status, TransferEth } from "./components";
-import CustomBtn from "layout/CustomHeader/CustomBtn";
+import { Infos, SignMessage, Status, TransferEth } from "./components/index";
+import CustomBtn from "../../layout/CustomHeader/CustomBtn";
 
 const styles = {
   container: {

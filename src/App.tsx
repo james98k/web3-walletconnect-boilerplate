@@ -4,11 +4,11 @@ import { useState } from "react";
 
 import { Layout, ConfigProvider, theme } from "antd";
 
-import DisplayPane from "components/displayPane/DisplayPane";
-import { CustomHeader, MainContent, CustomFooter } from "layout";
+import DisplayPane from "./components/displayPane/DisplayPane";
+import { MainContent} from "./layout";
 
-import "styles/App.css";
-import CustomBtn from "layout/CustomHeader/CustomBtn";
+import "./styles/App.css";
+// import CustomBtn from "layout/CustomHeader/CustomBtn";
 
 const styles = {
   layout: {

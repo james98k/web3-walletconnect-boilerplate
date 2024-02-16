@@ -3,9 +3,9 @@
     "baseUrl": "src",
     "target": "es2021",
     "rootDir": "./src",
-    "outDir": "./dist",
+    // "outDir": "./dist", // Consider removing or commenting out for webpack projects
     "removeComments": true,
-    "noEmitOnError": true,
+    "noEmitOnError": false,
     "sourceMap": true,
     "lib": [
       "dom",
@@ -23,11 +23,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false, // Changed to false to enable emitting JS files
     "jsx": "react-jsx",
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "noUnusedLocals": true,
+    "noUnusedLocals": true
   },
   "include": [
     "src"

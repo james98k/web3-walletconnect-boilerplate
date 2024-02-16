@@ -3,8 +3,8 @@ import { useState } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { Button, InputNumber } from "antd";
 
-import { useNativeBalance, useWriteContract } from "hooks";
-import { parseBigNumberToFloat } from "utils/formatters";
+import { useNativeBalance, useWriteContract } from "../../../hooks/index";
+import { parseBigNumberToFloat } from "../../../utils/formatters";
 
 import AddressInput from "../../AddressInput";
 

@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { useWindowWidthAndHeight } from "hooks";
+import { useWindowWidthAndHeight } from "../../hooks/index";
 
 type MainContentProps = {
   children?: React.ReactNode;

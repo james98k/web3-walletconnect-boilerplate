@@ -2,8 +2,8 @@ import { FC } from "react";
 
 import { Button, Layout } from "antd";
 
-import ConnectAccount from "components/Account/ConnectAccount";
-import ChainSelector from "components/ChainSelector";
+import ConnectAccount from "../../components/Account/ConnectAccount";
+import ChainSelector from "../../components/ChainSelector";
 
 
 const styles = {

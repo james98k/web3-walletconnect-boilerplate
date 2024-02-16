@@ -1,9 +1,9 @@
 import { BigNumber } from "ethers";
 import useSWR from "swr";
 
-import GenericERC20Abi from "data/abi/GenericERC20.json";
-import { GenericERC20 } from "data/abi/types";
-import { parseBigNumberToFloat } from "utils/formatters";
+import GenericERC20Abi from "../data/abi/GenericERC20.json";
+import { GenericERC20 } from "../data/abi/types";
+import { parseBigNumberToFloat } from "../utils/formatters";
 
 import { useContract } from "./useContract";
 

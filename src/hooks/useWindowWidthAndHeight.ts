@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { theme } from "styles/theme";
+import { theme } from "../styles/theme";
 
 export const useWindowWidthAndHeight = () => {
   const windowInnerSize = [window.innerWidth, window.innerHeight];

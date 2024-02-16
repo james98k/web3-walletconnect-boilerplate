@@ -3,8 +3,8 @@ import { Typography } from "antd";
 const { Paragraph } = Typography;
 
 import { CHAINS } from "data/networks";
-import { useNativeBalance, useWindowWidthAndHeight } from "hooks";
-import { getEllipsisTxt, parseBigNumberToFloat } from "utils/formatters";
+import { useNativeBalance, useWindowWidthAndHeight } from "../../../hooks/index";
+import { getEllipsisTxt, parseBigNumberToFloat } from "../../../utils/formatters";
 
 const styles = {
   display: {

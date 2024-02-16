@@ -2,7 +2,7 @@ import { FC, MouseEvent, ReactElement, SetStateAction, useState } from "react";
 
 import { Button, Input } from "antd";
 
-import { useWriteContract } from "hooks";
+import { useWriteContract } from "../../../hooks/index";
 
 const styles = {
   buttonSign: {
