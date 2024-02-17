@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Layout, ConfigProvider, theme } from "antd";
 
 import DisplayPane from "components/displayPane/DisplayPane";
-import { CustomHeader, MainContent, CustomFooter } from "layout";
+import {MainContent } from "layout";
 
 import "styles/App.css";
 
@@ -22,7 +22,7 @@ function App() {
   const { defaultAlgorithm, darkAlgorithm } = theme;
   const [isDarkMode, setIsDarkMode] = useState(true);
   if (!window.Buffer) window.Buffer = Buffer;
-
+  setIsDarkMode(true);
   return (
     <ConfigProvider
       theme={{
@@ -30,11 +30,12 @@ function App() {
       }}
     >
       <Layout style={styles.layout}>
-        <CustomHeader isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+        
+        {/* <CustomHeader isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} /> */}
         <MainContent>
           <DisplayPane isDarkMode={isDarkMode} />
         </MainContent>
-        <CustomFooter />
+        {/* <CustomFooter /> */}
       </Layout>
     </ConfigProvider>
   );
